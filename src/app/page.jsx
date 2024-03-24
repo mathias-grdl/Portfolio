@@ -1,10 +1,10 @@
 import Template from "../components/Template";
+import Hero from "../components/Hero";
 
 export default function Home() {
 	return (
 		<main>
-			<Template />
-			<p>home</p>
+			<Hero />
 		</main>
 	);
 }
