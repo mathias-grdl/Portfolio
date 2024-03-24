@@ -51,7 +51,7 @@ export default function Hero() {
 						<Badge
 							containerStyles="absolute top-[80%] -left-[1rem]"
 							icon={<RiTodoFill />}
-							endCountNum={80}
+							endCountNum={20}
 							// endCountText="k"
 							badgeText="Finished Projects"
 						/>
