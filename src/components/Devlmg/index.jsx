@@ -1,5 +1,9 @@
-import React from "react";
+import Image from "next/image";
 
-export default function DevImg() {
-	return <div>DevImg</div>;
+export default function DevImg({ containerStyles, imgSrc }) {
+	return (
+		<div className={`${containerStyles}`}>
+			<Image src={imgSrc} fill priority alt="mathias picture" />
+		</div>
+	);
 }
