@@ -15,7 +15,7 @@ import {
 const infoData = [
 	{
 		icon: <User2 size={20} />,
-		text: "Mathias",
+		text: "Mathias Grondziel",
 		id: 1,
 	},
 	{
@@ -25,7 +25,7 @@ const infoData = [
 	},
 	{
 		icon: <MailIcon size={20} />,
-		text: "mathias.grdl.pro@gmail.com",
+		text: "mathias.grondziel@gmail.com",
 		id: 3,
 	},
 	{
@@ -46,13 +46,13 @@ const qualificationData = [
 		data: [
 			{
 				university: "Openclassrooms",
-				qualification: "Niveau 5",
+				qualification: "Level 5 diploma recognized by the French State",
 				years: "2023 - 2023",
 				id: 1,
 			},
 			{
 				university: "O'clock",
-				qualification: "Niveau 5",
+				qualification: "Level 5 diploma recognized by the French State",
 				years: "2024 - 2024",
 				id: 2,
 			},
@@ -63,13 +63,13 @@ const qualificationData = [
 		data: [
 			{
 				company: "Kori",
-				role: "Développeur web wordpress",
+				role: "WordPress web developer - custom site creation without using pre-made themes",
 				years: "2022 - 2023",
 				id: 1,
 			},
 			{
 				company: "Freelance",
-				role: "Développeur web wordpress",
+				role: "WordPress & Front-end (React.js) web developer",
 				years: "2023 - 2024",
 				id: 2,
 			},
@@ -156,14 +156,14 @@ export default function About() {
 								<TabsContent value="personal">
 									<div className="text-center xl:text-left">
 										<h3 className="h3 mb-4">
-											Unmatched Service Quality for Over
-											10 Years
+											I have been a web developer since
+											September 2022.
 										</h3>
 										<p className="subtitle max-w-xl mx-auto xl:mx-0">
-											I specialize in crafting intuitive
-											website with cutting-edge
-											technology, delivering dynamic and
-											engaging user experiences.
+											I initially started with an
+											apprenticeship in custom WordPress
+											site creation, then I transitioned
+											into ReactJS.
 										</p>
 										<div className="grid xl:grid-cols-2 gap-4 mb-12">
 											{infoData.map((item) => {
@@ -194,7 +194,7 @@ export default function About() {
 								<TabsContent value="qualifications">
 									<div className="text-center xl:text-left">
 										<h3 className="h3 mb-8 text-center xl:text-left">
-											My Awesome Journey
+											My career path
 										</h3>
 										{/* wrapper */}
 										<div className="grid md:grid-cols-2 gap-y-8">

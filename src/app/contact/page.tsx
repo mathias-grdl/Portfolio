@@ -27,11 +27,11 @@ export default function Contact() {
 					<div className="flex flex-col gap-y-4 xl:gap-y-14 mb-12 xl:mb-24 text-base xl:text-lg">
 						<div className="flex items-center gap-x-8">
 							<MailIcon size={18} className="text-primary" />
-							<div>youremail@gmail.com</div>
+							<div>mathias.grondziel@gmail.com</div>
 						</div>
 						<div className="flex items-center gap-x-8">
 							<HomeIcon size={18} className="text-primary" />
-							<div>Perpignan</div>
+							<div>Perpignan, France</div>
 						</div>
 						<div className="flex items-center gap-x-8">
 							<PhoneCall size={18} className="text-primary" />

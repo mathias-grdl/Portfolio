@@ -56,7 +56,7 @@ export default function Hero() {
 							badgeText="Finished Projects"
 						/>
 						<Badge
-							containerStyles="absolute top-[55%] -right-[8rem]"
+							containerStyles="absolute top-[55%] -right-[2rem]"
 							icon={<RiTeamFill />}
 							endCountNum={22}
 							endCountText="+"
