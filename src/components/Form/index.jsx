@@ -41,8 +41,12 @@ export default function Form() {
 					id="name"
 					placeholder="Name"
 					name="user_name"
+					autoComplete="name"
 				/>
-				<User className="absolute right-6 bg-white" size={20} />
+				<User
+					className="absolute right-6 bg-white dark:bg-transparent"
+					size={20}
+				/>
 			</div>
 			<div className="relative flex items-center">
 				<Input
@@ -50,18 +54,23 @@ export default function Form() {
 					id="email"
 					placeholder="Email"
 					name="user_email"
+					autoComplete="email"
 				/>
-				<MailIcon className="absolute right-6 bg-white" size={20} />
+				<MailIcon
+					className="absolute right-6 bg-white dark:bg-transparent"
+					size={20}
+				/>
 			</div>
 			<div className="relative flex items-center">
 				<Textarea
 					name="message"
-					type="name"
-					id="name"
+					type="text"
+					id="message"
 					placeholder="Type Your Message Here."
+					autoComplete="off"
 				/>
 				<MessageSquare
-					className="absolute top-4 right-6 bg-white"
+					className="absolute top-4 right-6 bg-white dark:bg-transparent"
 					size={20}
 				/>
 			</div>

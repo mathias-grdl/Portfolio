@@ -13,11 +13,12 @@ import ProjectCard from "../ProjectCard";
 
 const projectData = [
 	{
-		image: "/assets/work/1.png",
+		image: "/assets/work/obandito-home.svg",
 		category: "react js",
-		name: "Nexa Website",
-		description: "lorem",
-		link: "/",
+		name: "O'bandito",
+		description:
+			"Projet O'clock de 3 personnes, utilisation de reactJs/redux, graphql",
+		link: "https://main--obandito.netlify.app/",
 		github: "/",
 		id: 1,
 	},

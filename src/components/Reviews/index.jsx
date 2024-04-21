@@ -13,46 +13,67 @@ import { Pagination } from "swiper/modules";
 
 const reviewsData = [
 	{
-		avatar: "/assets/reviews/avatar-1.png",
-		name: "Richard Thompson",
-		job: "Chef",
-		review: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum obcaecati saepe unde autem.",
+		avatar: "/assets/reviews/avatar-fiverr.png",
+		name: "djamelfilm",
+		country: "France",
+		review: "Excellent prestataire, service rapide et résultat au delà des mes espérances. Je recommande !",
 		id: 1,
 	},
 	{
-		avatar: "/assets/reviews/avatar-2.png",
-		name: "Richard Thompson",
-		job: "Chef",
-		review: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum obcaecati saepe unde autem.",
+		avatar: "/assets/reviews/avatar-fiverr.png",
+		name: "djamelfilm",
+		country: "France",
+		review: "2eme fois que je fais appel à lui, et honnêtement tout est parfait.",
 		id: 2,
 	},
 	{
-		avatar: "/assets/reviews/avatar-3.png",
-		name: "Richard Thompson",
-		job: "Chef",
-		review: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum obcaecati saepe unde autem.",
+		avatar: "/assets/reviews/avatar-fiverr.png",
+		name: "letendre9",
+		country: "Canada",
+		review: "Incredible work, great communication and fixed my problem very quickly. Highly recommend!",
 		id: 3,
 	},
 	{
-		avatar: "/assets/reviews/avatar-4.png",
-		name: "Richard Thompson",
-		job: "Chef",
-		review: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum obcaecati saepe unde autem.",
+		avatar: "/assets/reviews/avatar-fiverr.png",
+		name: "souly_sam",
+		country: "Ivory Coast",
+		review: "Very good work, I recommend.",
 		id: 4,
 	},
 	{
-		avatar: "/assets/reviews/avatar-5.png",
-		name: "Richard Thompson",
-		job: "Chef",
-		review: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum obcaecati saepe unde autem.",
+		avatar: "/assets/reviews/avatar-fiverr.png",
+		name: "alexisalexis442",
+		country: "France",
+		review: "Mathias a vraiment assuré sur la résolution des erreurs 503 de mon site ! Il a corrigé les problèmes de manière rapide et efficace, assurant le bon fonctionnement du site sans aucun bug. La communication proactive de Mathias a été un atout majeur. Il a pris le temps d'expliquer chaque étape du processus et a fourni une documentation claire, facilitant la gestion future du site. Respectant les délais impartis, Mathias s'est montré courtois et a même dépassé les exigences en fournissant des conseils supplémentaires pour optimiser le site. Je recommande vivement Mathias pour son professionnalisme et son expertise dans le domaine.",
 		id: 5,
 	},
 	{
-		avatar: "/assets/reviews/avatar-6.png",
-		name: "Richard Thompson",
-		job: "Chef",
-		review: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum obcaecati saepe unde autem.",
+		avatar: "/assets/reviews/avatar-fiverr.png",
+		name: "mtlp_frag",
+		country: "France",
+		review: "Un grand merci à Mathias pour sa disponibilité et sa réactivité! Professionnel et compétent, il a très rapidement et efficacement cerné l'origine du problème et a proposé des solutions. Un problème majeur résolu ! Je reviendrai travailler avec lui sur d'autres sujets de maintenance site ecom.",
 		id: 6,
+	},
+	{
+		avatar: "/assets/reviews/avatar-fiverr.png",
+		name: "mtlp_frag",
+		country: "France",
+		review: "Super ! J'ai fait appel de nouveau aux compétences de Mathias. Sérieux, communicant et proactif, très agréable de travailler avec Mathias. Merci beaucoup !",
+		id: 7,
+	},
+	{
+		avatar: "/assets/reviews/avatar-fiverr.png",
+		name: "alexisalexis442",
+		country: "France",
+		review: "Deuxième commande que je passe chez Mathias, et ça se déroule toujours extrêmement bien, très bonne communication, rapidité et efficacité au rendez-vous, et un résultat supérieur à mes attentes. Je vous recommande Mathias, vous ne serez pas déçu du résultat !",
+		id: 8,
+	},
+	{
+		avatar: "/assets/reviews/avatar-fiverr.png",
+		name: "inos_architects",
+		country: "Switzerland",
+		review: "Good work! Mathias migrated our website to the new host very quickly. Fully recommend.",
+		id: 9,
 	},
 ];
 
@@ -93,11 +114,11 @@ export default function Reviews() {
 												<CardTitle>
 													{person.name}
 												</CardTitle>
-												<p>{person.job}</p>
+												<p>{person.country}</p>
 											</div>
 										</div>
 									</CardHeader>
-									<CardDescription className="text-lg text-muted-foreground">
+									<CardDescription className="text-lg text-muted-foreground overflow-hidden line-clamp-4">
 										{person.review}
 									</CardDescription>
 								</Card>

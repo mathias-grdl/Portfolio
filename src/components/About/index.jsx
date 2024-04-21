@@ -93,23 +93,23 @@ const skillData = [
 			},
 		],
 	},
-	{
-		title: "tools",
-		data: [
-			{
-				imgPath: "/assets/about/vscode.svg",
-			},
-			{
-				imgPath: "/assets/about/figma.svg",
-			},
-			{
-				imgPath: "/assets/about/notion.svg",
-			},
-			{
-				imgPath: "/assets/about/wordpress.svg",
-			},
-		],
-	},
+	// {
+	// 	title: "tools",
+	// 	data: [
+	// 		{
+	// 			imgPath: "/assets/about/vscode.svg",
+	// 		},
+	// 		{
+	// 			imgPath: "/assets/about/figma.svg",
+	// 		},
+	// 		{
+	// 			imgPath: "/assets/about/notion.svg",
+	// 		},
+	// 		{
+	// 			imgPath: "/assets/about/wordpress.svg",
+	// 		},
+	// 	],
+	// },
 ];
 
 export default function About() {
@@ -127,7 +127,7 @@ export default function About() {
 					<div className="hidden xl:flex flex-1 relative">
 						<DevImg
 							containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative "
-							imgSrc="/assets/hero/developer-mathias.png"
+							imgSrc="/assets/about/avatar-dev.png"
 						/>
 					</div>
 					<div className="flex-1">
@@ -342,7 +342,7 @@ export default function About() {
 											</div>
 										</div>
 										{/* Tools */}
-										<div>
+										{/* <div>
 											<h4 className="text-xl font-semibold mb-2 border-b border-border xl:text-left">
 												Tools
 											</h4>
@@ -370,7 +370,7 @@ export default function About() {
 													})}
 												</div>
 											</div>
-										</div>
+										</div> */}
 									</div>
 								</TabsContent>
 							</div>

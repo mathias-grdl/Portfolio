@@ -32,9 +32,15 @@ export default function Hero() {
 									Contact me <Send size={18} />
 								</Button>
 							</Link>
-							<Button variant="secondary" className="gap-x-2">
-								Download CV <Download size={18} />
-							</Button>
+							<Link
+								href="/assets/CV-FR.pdf"
+								target="_blank"
+								download
+							>
+								<Button variant="secondary" className="gap-x-2">
+									Télécharger CV <Download size={18} />
+								</Button>
+							</Link>
 						</div>
 						<Socials
 							containerStyles="flex gap-x-6 mx-auto xl:mx-0"
