@@ -1,5 +1,4 @@
 import Link from "next/link";
-// import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
 import {
 	RiBriefcase4Fill,
@@ -32,11 +31,7 @@ export default function Hero() {
 									Contact me <Send size={18} />
 								</Button>
 							</Link>
-							<Link
-								href="/assets/CV-FR.pdf"
-								target="_blank"
-								download
-							>
+							<Link href="/assets/CV-FR.pdf" passHref>
 								<Button variant="secondary" className="gap-x-2">
 									Télécharger CV <Download size={18} />
 								</Button>
@@ -58,7 +53,6 @@ export default function Hero() {
 							containerStyles="absolute top-[80%] -left-[1rem]"
 							icon={<RiTodoFill />}
 							endCountNum={20}
-							// endCountText="k"
 							badgeText="Finished Projects"
 						/>
 						<Badge

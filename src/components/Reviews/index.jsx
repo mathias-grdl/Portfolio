@@ -77,8 +77,6 @@ const reviewsData = [
 	},
 ];
 
-// /assets/hero/developer-mathias.png
-
 export default function Reviews() {
 	return (
 		<section className="mb-12 xl:mb-32">
