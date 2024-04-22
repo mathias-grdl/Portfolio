@@ -44,7 +44,7 @@ export default function Form() {
 					autoComplete="name"
 				/>
 				<User
-					className="absolute right-6 bg-white dark:bg-transparent"
+					className="absolute left-6 bg-white dark:bg-transparent"
 					size={20}
 				/>
 			</div>
@@ -57,7 +57,7 @@ export default function Form() {
 					autoComplete="email"
 				/>
 				<MailIcon
-					className="absolute right-6 bg-white dark:bg-transparent"
+					className="absolute left-6 bg-white dark:bg-transparent"
 					size={20}
 				/>
 			</div>
@@ -70,7 +70,7 @@ export default function Form() {
 					autoComplete="off"
 				/>
 				<MessageSquare
-					className="absolute top-4 right-6 bg-white dark:bg-transparent"
+					className="absolute top-3 left-6 bg-white dark:bg-transparent"
 					size={20}
 				/>
 			</div>
