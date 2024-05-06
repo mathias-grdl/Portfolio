@@ -10,7 +10,7 @@ import ProjectCard from "../../components/ProjectCard";
 
 const projectData = [
 	{
-		image: "/assets/work/obandito-home.svg",
+		image: "/assets/work/obandito-home.png",
 		category: "react js",
 		name: "O'bandito",
 		description:
@@ -20,31 +20,24 @@ const projectData = [
 		id: 1,
 	},
 	{
-		image: "/assets/work/2.png",
-		category: "react js",
-		name: "Nexa Website",
-		description: "lorem",
-		link: "/",
+		image: "/assets/work/maison-thishan.png",
+		category: "wordpress",
+		name: "Maison Thishan",
+		description:
+			"Création d'un site ecommerce pour un parfumeur indépendant",
+		link: "https://www.maisonthishan.com/",
 		github: "/",
 		id: 2,
 	},
 	{
-		image: "/assets/work/3.png",
-		category: "next js",
-		name: "Nexa Website",
-		description: "lorem",
-		link: "/",
-		github: "/",
+		image: "/assets/work/tp66.png",
+		category: "wordpress",
+		name: "TP66",
+		description:
+			"Refonte du site de la plus grosse entreprise de BTP des Pyrénées orientales",
+		link: "https://www.travaux-publics-66.fr/",
+		github: "",
 		id: 3,
-	},
-	{
-		image: "/assets/work/4.png",
-		category: "next js",
-		name: "Nexa Website",
-		description: "lorem",
-		link: "/",
-		github: "/",
-		id: 4,
 	},
 ];
 

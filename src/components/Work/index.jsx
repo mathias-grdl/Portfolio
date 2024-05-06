@@ -13,41 +13,34 @@ import ProjectCard from "../ProjectCard";
 
 const projectData = [
 	{
-		image: "/assets/work/obandito-home.svg",
+		image: "/assets/work/obandito-home.png",
 		category: "react js",
 		name: "O'bandito",
 		description:
 			"Projet O'clock de 3 personnes, utilisation de reactJs/redux, graphql",
 		link: "https://main--obandito.netlify.app/",
-		github: "/",
+		github: "https://github.com/O-clock-Kimchi/O-Bandito-front",
 		id: 1,
 	},
 	{
-		image: "/assets/work/2.png",
-		category: "react js",
-		name: "Nexa Website",
-		description: "lorem",
-		link: "/",
-		github: "/",
+		image: "/assets/work/maison-thishan.png",
+		category: "wordpress",
+		name: "Maison Thishan",
+		description:
+			"Création d'un site ecommerce pour un parfumeur indépendant",
+		link: "https://www.maisonthishan.com/",
+		github: "",
 		id: 2,
 	},
 	{
-		image: "/assets/work/3.png",
-		category: "next js",
-		name: "Nexa Website",
-		description: "lorem",
-		link: "/",
-		github: "/",
+		image: "/assets/work/tp66.png",
+		category: "wordpress",
+		name: "TP66",
+		description:
+			"Refonte du site de la plus grosse entreprise de BTP des Pyrénées orientales",
+		link: "https://www.travaux-publics-66.fr/",
+		github: "",
 		id: 3,
-	},
-	{
-		image: "/assets/work/4.png",
-		category: "next js",
-		name: "Nexa Website",
-		description: "lorem",
-		link: "/",
-		github: "/",
-		id: 4,
 	},
 ];
 
@@ -58,7 +51,9 @@ export default function Work() {
 				{/* text */}
 				<div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
 					<h2 className="section-title mb-4">Latest Projects</h2>
-					<p className="subtitle mb-8">Lorem, ipsun color sit amet</p>
+					<p className="subtitle mb-8">
+						Find more projects in the My Projects tab.
+					</p>
 					<Link href="/projects">
 						<Button>All projects</Button>
 					</Link>
@@ -68,6 +63,7 @@ export default function Work() {
 					<Swiper
 						className="h-[480px]"
 						slidesPerView={1}
+						loop={true}
 						breakpoints={{
 							640: {
 								slidesPerView: 2,

@@ -33,7 +33,7 @@ export default function Hero() {
 							</Link>
 							<Link href="/assets/CV-FR.pdf" passHref>
 								<Button variant="secondary" className="gap-x-2">
-									Télécharger CV <Download size={18} />
+									Download CV <Download size={18} />
 								</Button>
 							</Link>
 						</div>

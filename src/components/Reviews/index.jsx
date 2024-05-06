@@ -18,6 +18,7 @@ const reviewsData = [
 		country: "France",
 		review: "Excellent prestataire, service rapide et résultat au delà des mes espérances. Je recommande !",
 		id: 1,
+		flag: "/assets/flags/french.png",
 	},
 	{
 		avatar: "/assets/reviews/avatar-fiverr.png",
@@ -25,6 +26,7 @@ const reviewsData = [
 		country: "France",
 		review: "2eme fois que je fais appel à lui, et honnêtement tout est parfait.",
 		id: 2,
+		flag: "/assets/flags/french.png",
 	},
 	{
 		avatar: "/assets/reviews/avatar-fiverr.png",
@@ -32,6 +34,7 @@ const reviewsData = [
 		country: "Canada",
 		review: "Incredible work, great communication and fixed my problem very quickly. Highly recommend!",
 		id: 3,
+		flag: "/assets/flags/canada.png",
 	},
 	{
 		avatar: "/assets/reviews/avatar-fiverr.png",
@@ -39,6 +42,7 @@ const reviewsData = [
 		country: "Ivory Coast",
 		review: "Very good work, I recommend.",
 		id: 4,
+		flag: "/assets/flags/cotedivoire.png",
 	},
 	{
 		avatar: "/assets/reviews/avatar-fiverr.png",
@@ -46,6 +50,7 @@ const reviewsData = [
 		country: "France",
 		review: "Mathias a vraiment assuré sur la résolution des erreurs 503 de mon site ! Il a corrigé les problèmes de manière rapide et efficace, assurant le bon fonctionnement du site sans aucun bug. La communication proactive de Mathias a été un atout majeur. Il a pris le temps d'expliquer chaque étape du processus et a fourni une documentation claire, facilitant la gestion future du site. Respectant les délais impartis, Mathias s'est montré courtois et a même dépassé les exigences en fournissant des conseils supplémentaires pour optimiser le site. Je recommande vivement Mathias pour son professionnalisme et son expertise dans le domaine.",
 		id: 5,
+		flag: "/assets/flags/french.png",
 	},
 	{
 		avatar: "/assets/reviews/avatar-fiverr.png",
@@ -53,6 +58,7 @@ const reviewsData = [
 		country: "France",
 		review: "Un grand merci à Mathias pour sa disponibilité et sa réactivité! Professionnel et compétent, il a très rapidement et efficacement cerné l'origine du problème et a proposé des solutions. Un problème majeur résolu ! Je reviendrai travailler avec lui sur d'autres sujets de maintenance site ecom.",
 		id: 6,
+		flag: "/assets/flags/french.png",
 	},
 	{
 		avatar: "/assets/reviews/avatar-fiverr.png",
@@ -60,6 +66,7 @@ const reviewsData = [
 		country: "France",
 		review: "Super ! J'ai fait appel de nouveau aux compétences de Mathias. Sérieux, communicant et proactif, très agréable de travailler avec Mathias. Merci beaucoup !",
 		id: 7,
+		flag: "/assets/flags/french.png",
 	},
 	{
 		avatar: "/assets/reviews/avatar-fiverr.png",
@@ -67,6 +74,7 @@ const reviewsData = [
 		country: "France",
 		review: "Deuxième commande que je passe chez Mathias, et ça se déroule toujours extrêmement bien, très bonne communication, rapidité et efficacité au rendez-vous, et un résultat supérieur à mes attentes. Je vous recommande Mathias, vous ne serez pas déçu du résultat !",
 		id: 8,
+		flag: "/assets/flags/french.png",
 	},
 	{
 		avatar: "/assets/reviews/avatar-fiverr.png",
@@ -74,6 +82,7 @@ const reviewsData = [
 		country: "Switzerland",
 		review: "Good work! Mathias migrated our website to the new host very quickly. Fully recommend.",
 		id: 9,
+		flag: "/assets/flags/suisse.png",
 	},
 ];
 
@@ -86,19 +95,20 @@ export default function Reviews() {
 				</h2>
 				<Swiper
 					slidesPerView={1}
+					loop={true}
 					breakpoints={{
 						640: { slidesPerView: 2 },
 						1400: { slidesPerView: 3 },
 					}}
 					spaceBetween={30}
-					modules={{ Pagination }}
+					modules={[Pagination]}
 					pagination={{ clickable: true }}
 					className="h-[350px]"
 				>
 					{reviewsData.map((person) => {
 						return (
 							<SwiperSlide key={person.id}>
-								<Card className="bg-tertiary dark:bg-secondary/40 p-8 min-h-[300px]">
+								<Card className="bg-tertiary dark:bg-secondary/40 p-8 min-h-[300px] cursor-pointer">
 									<CardHeader className="p-0 mb-10">
 										<div className="flex items-center gap-x-4">
 											<Image
@@ -109,10 +119,17 @@ export default function Reviews() {
 												priority
 											/>
 											<div className="flex flex-col">
-												<CardTitle>
+												<CardTitle className="mb-1">
 													{person.name}
 												</CardTitle>
-												<p>{person.country}</p>
+												<div className="flex gap-x-2 flex items-center">
+													<img
+														src={person.flag}
+														alt="flag"
+														className="size-[15px] rounded-full"
+													/>
+													<p>{person.country}</p>
+												</div>
 											</div>
 										</div>
 									</CardHeader>

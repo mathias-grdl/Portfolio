@@ -10,7 +10,7 @@ export default function Footer() {
 						iconsStyles="text-primary dark:text-white/70 text-[20px] hover:text-white dark:hover:text-primary transition-all"
 					/>
 					<div className="text-muted-foreground">
-						Copyright &copy, Mathias Grondziel. All rights reserved.
+						Copyright ©2024, Mathias Grondziel. All rights reserved.
 					</div>
 				</div>
 			</div>

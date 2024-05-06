@@ -42,6 +42,7 @@ export default function Form() {
 					placeholder="Name"
 					name="user_name"
 					autoComplete="name"
+					required
 				/>
 				<User
 					className="absolute left-6 bg-white dark:bg-transparent"
@@ -55,6 +56,7 @@ export default function Form() {
 					placeholder="Email"
 					name="user_email"
 					autoComplete="email"
+					required
 				/>
 				<MailIcon
 					className="absolute left-6 bg-white dark:bg-transparent"
@@ -68,6 +70,7 @@ export default function Form() {
 					id="message"
 					placeholder="Type Your Message Here."
 					autoComplete="off"
+					required
 				/>
 				<MessageSquare
 					className="absolute top-3 left-6 bg-white dark:bg-transparent"

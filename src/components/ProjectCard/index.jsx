@@ -6,7 +6,7 @@ import { Badge } from "../ui/badge";
 
 export default function ProjetCard({ project }) {
 	return (
-		<Card className="group overflow-hidden relative">
+		<Card className="group overflow-hidden relative cursor-pointer">
 			<CardHeader className="p-0">
 				<div className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark  xl:bg-[110%] xl:bg-no-repeat overflow-hidden">
 					<Image
@@ -19,20 +19,29 @@ export default function ProjetCard({ project }) {
 						sizes="247px 250px"
 					/>
 					<div className="flex gap-x-4">
-						<Link
-							href={project.link}
-							target="_blank"
-							className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
-						>
-							<Link2Icon className="text-white" />
-						</Link>
-						<Link
-							href={project.github}
-							target="_blank"
-							className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
-						>
-							<Github className="text-white" />
-						</Link>
+						{project.link === "" ? (
+							""
+						) : (
+							<Link
+								href={project.link}
+								target="_blank"
+								className="bg-primary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 dark:bg-secondary"
+							>
+								<Link2Icon className="text-white" />
+							</Link>
+						)}
+
+						{project.github === "" ? (
+							""
+						) : (
+							<Link
+								href={project.github}
+								target="_blank"
+								className="bg-primary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 dark:bg-secondary"
+							>
+								<Github className="text-white" />
+							</Link>
+						)}
 					</div>
 				</div>
 			</CardHeader>
@@ -41,7 +50,7 @@ export default function ProjetCard({ project }) {
 					{project.category}
 				</Badge>
 				<h4 className="h4 mb-1">{project.name}</h4>
-				<p className="text-muted-foreground text-lg">
+				<p className="text-muted-foreground text-lg line-clamp-2">
 					{project.description}
 				</p>
 			</div>
