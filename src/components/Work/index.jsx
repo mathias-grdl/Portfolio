@@ -17,7 +17,7 @@ const projectData = [
 		category: "react js",
 		name: "O'bandito",
 		description:
-			"Projet O'clock de 3 personnes, utilisation de reactJs/redux, graphql",
+			"Project O'clock with 3 people, using React.js/Redux, GraphQL",
 		link: "https://main--obandito.netlify.app/",
 		github: "https://github.com/O-clock-Kimchi/O-Bandito-front",
 		id: 1,
@@ -27,7 +27,7 @@ const projectData = [
 		category: "wordpress",
 		name: "Maison Thishan",
 		description:
-			"Création d'un site ecommerce pour un parfumeur indépendant",
+			"Creating an e-commerce website for an independent perfumer",
 		link: "https://www.maisonthishan.com/",
 		github: "",
 		id: 2,
@@ -37,7 +37,7 @@ const projectData = [
 		category: "wordpress",
 		name: "TP66",
 		description:
-			"Refonte du site de la plus grosse entreprise de BTP des Pyrénées orientales",
+			"Redesign of the website for the largest construction company in the Eastern Pyrenees",
 		link: "https://www.travaux-publics-66.fr/",
 		github: "",
 		id: 3,
