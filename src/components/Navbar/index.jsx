@@ -7,6 +7,7 @@ export default function Navbar({
 	containerStyles,
 	LinkStyles,
 	underLineStyles,
+	onLinkClick,
 }) {
 	const links = [
 		{ path: "/", name: "home", id: 1 },
@@ -24,6 +25,7 @@ export default function Navbar({
 						href={link.path}
 						key={link.id}
 						className={`capitalize ${LinkStyles}`}
+						onClick={onLinkClick}
 					>
 						{link.path === path && (
 							<motion.span

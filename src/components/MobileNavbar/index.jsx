@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet.jsx";
 import { AlignJustify } from "lucide-react";
 import Logo from "../Logo";
@@ -5,8 +6,12 @@ import Navbar from "../Navbar";
 import Socials from "../Socials";
 
 export default function MobileNavbar() {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const closeMenu = () => setIsOpen(false);
+
 	return (
-		<Sheet>
+		<Sheet open={isOpen} onOpenChange={setIsOpen}>
 			<SheetTrigger asChild>
 				<AlignJustify className="cursor-pointer" />
 			</SheetTrigger>
@@ -17,6 +22,7 @@ export default function MobileNavbar() {
 						<Navbar
 							containerStyles="flex flex-col items-center gap-y-6"
 							linkStyles="text-2xl"
+							onLinkClick={closeMenu}
 						/>
 					</div>
 					<Socials
