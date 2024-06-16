@@ -24,7 +24,9 @@
 		"**/*.ts",
 		"**/*.tsx",
 		"src/components/ui/sheet.jsx",
-		"src/components/ui/button.tsx"
+		"src/components/ui/button.tsx",
+		"jest.config.js",
+		"jest.setup.js"
 	],
 	"exclude": ["node_modules"]
 }
