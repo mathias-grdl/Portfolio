@@ -1,4 +1,4 @@
-"use client";
+import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -34,6 +34,7 @@ export default function Navbar({
 								transition={{ type: "tween" }}
 								layoutId="underline"
 								className={`${underLineStyles}`}
+								data-testid={`underline-${link.name}`}
 							/>
 						)}
 						{link.name}
