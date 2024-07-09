@@ -30,7 +30,7 @@ const infoData = [
 	},
 	{
 		icon: <Calendar size={20} />,
-		text: "8 août 2000 ",
+		text: "August 8, 2000",
 		id: 4,
 	},
 	{
@@ -87,9 +87,11 @@ const skillData = [
 			},
 			{
 				name: "Front-end Development",
+				id: 2,
 			},
 			{
 				name: "Javascript, ReactJs",
+				id: 3,
 			},
 		],
 	},

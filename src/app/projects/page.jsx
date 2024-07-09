@@ -7,49 +7,7 @@ import {
 	TabsTrigger,
 } from "../../components/ui/tabs";
 import ProjectCard from "../../components/ProjectCard";
-
-const projectData = [
-	{
-		image: "/assets/work/obandito-home.png",
-		category: "ReactJS",
-		name: "O'bandito",
-		description:
-			"Project O'clock with 3 people, using React.js/Redux, GraphQL",
-		link: "https://main--obandito.netlify.app/",
-		github: "https://github.com/O-clock-Kimchi/O-Bandito-front",
-		id: 1,
-	},
-	{
-		image: "/assets/work/maison-thishan.png",
-		category: "Wordpress",
-		name: "Maison Thishan",
-		description:
-			"Creating an e-commerce website for an independent perfumer",
-		link: "https://www.maisonthishan.com/",
-		github: "",
-		id: 2,
-	},
-	{
-		image: "/assets/work/tp66.png",
-		category: "Wordpress",
-		name: "TP66",
-		description:
-			"Redesign of the website for the largest construction company in the Eastern Pyrenees",
-		link: "https://www.travaux-publics-66.fr/",
-		github: "",
-		id: 3,
-	},
-	{
-		image: "/assets/work/kasa.png",
-		category: "ReactJS",
-		name: "Kasa",
-		description:
-			"Kasa is my first ReactJS project aimed at showcasing different apartments",
-		link: "https://p7-kasa-openclassrooms.netlify.app/",
-		github: "https://github.com/mathias-grdl/P7-Kasa-Openclassrooms",
-		id: 4,
-	},
-];
+import { projectData } from "../../data/projects";
 
 const uniqueCategories = [
 	"all projects",

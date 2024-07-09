@@ -19,9 +19,7 @@ export default function ProjetCard({ project }) {
 						sizes="247px 250px"
 					/>
 					<div className="flex gap-x-4">
-						{project.link === "" ? (
-							""
-						) : (
+						{project.link !== "" ? (
 							<Link
 								href={project.link}
 								target="_blank"
@@ -29,11 +27,9 @@ export default function ProjetCard({ project }) {
 							>
 								<Link2Icon className="text-white" />
 							</Link>
-						)}
+						) : null}
 
-						{project.github === "" ? (
-							""
-						) : (
+						{project.github !== "" ? (
 							<Link
 								href={project.github}
 								target="_blank"
@@ -41,7 +37,7 @@ export default function ProjetCard({ project }) {
 							>
 								<Github className="text-white" />
 							</Link>
-						)}
+						) : null}
 					</div>
 				</div>
 			</CardHeader>
