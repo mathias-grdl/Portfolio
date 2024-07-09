@@ -31,7 +31,11 @@ export default function Hero() {
 									Contact me <Send size={18} />
 								</Button>
 							</Link>
-							<Link href="/assets/CV-FR.pdf" passHref>
+							<Link
+								href="/assets/Mathias-Grondziel-CV-EN.pdf"
+								passHref
+								target="_blank"
+							>
 								<Button variant="secondary" className="gap-x-2">
 									Download CV <Download size={18} />
 								</Button>
