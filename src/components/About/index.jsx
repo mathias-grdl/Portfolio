@@ -1,6 +1,5 @@
-import DevImg from "../Devlmg";
-import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
+import OrbitingCirclesComponent from "../OrbitingCircles";
 
 import {
 	User2,
@@ -86,32 +85,15 @@ const skillData = [
 				id: 1,
 			},
 			{
-				name: "Front-end Development",
+				name: "Javascript, ReactJS, Typescript",
 				id: 2,
 			},
 			{
-				name: "Javascript, ReactJs",
+				name: "In learning : Next.js",
 				id: 3,
 			},
 		],
 	},
-	// {
-	// 	title: "tools",
-	// 	data: [
-	// 		{
-	// 			imgPath: "/assets/about/vscode.svg",
-	// 		},
-	// 		{
-	// 			imgPath: "/assets/about/figma.svg",
-	// 		},
-	// 		{
-	// 			imgPath: "/assets/about/notion.svg",
-	// 		},
-	// 		{
-	// 			imgPath: "/assets/about/wordpress.svg",
-	// 		},
-	// 	],
-	// },
 ];
 
 export default function About() {
@@ -127,10 +109,7 @@ export default function About() {
 				</h2>
 				<div className="flex flex-col xl:flex-row">
 					<div className="hidden xl:flex flex-1 relative">
-						<DevImg
-							containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative "
-							imgSrc="/assets/about/avatar-dev.png"
-						/>
+						<OrbitingCirclesComponent />
 					</div>
 					<div className="flex-1">
 						<Tabs defaultValue="personal">
@@ -343,36 +322,6 @@ export default function About() {
 												</div>
 											</div>
 										</div>
-										{/* Tools */}
-										{/* <div>
-											<h4 className="text-xl font-semibold mb-2 border-b border-border xl:text-left">
-												Tools
-											</h4>
-											<div className="mb-4">
-												<div className="flex gap-x-8 justify-content xl:justify-start">
-													{getData(
-														skillData,
-														"tools"
-													).data.map((item) => {
-														const { imgPath, id } =
-															item;
-														return (
-															<div key={id}>
-																<Image
-																	src={
-																		imgPath
-																	}
-																	width={48}
-																	height={48}
-																	alt=""
-																	priority
-																/>
-															</div>
-														);
-													})}
-												</div>
-											</div>
-										</div> */}
 									</div>
 								</TabsContent>
 							</div>
