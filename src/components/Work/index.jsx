@@ -41,13 +41,14 @@ export default function Work() {
 						modules={[Pagination]}
 						pagination={{ clickable: "true" }}
 					>
-						{projectData.slice(0, 4).map((project) => {
-							return (
+						{projectData
+							.filter((project) => project.subCategory === "")
+							.slice(0, 4)
+							.map((project) => (
 								<SwiperSlide key={project.id}>
 									<ProjectCard project={project} />
 								</SwiperSlide>
-							);
-						})}
+							))}
 					</Swiper>
 				</div>
 			</div>
