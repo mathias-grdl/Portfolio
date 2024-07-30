@@ -2,7 +2,7 @@ export const projectData = [
 	{
 		image: "/assets/work/todolist.png",
 		category: "ReactJS",
-		subCategory: "Exercise Unfinished",
+		subCategory: "Exercise",
 		name: "To-Do List",
 		description:
 			"Unfinished To-Do List project, the goal is to work on CRUD operations",
